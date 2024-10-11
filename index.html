@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Scorecard</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Golf Scorecard</h1>
+    <div id="course-info">
+        <label for="course">Select Course:</label>
+        <select id="course" onchange="loadCourse()">
+            <option value="11819">Thanksgiving Point Golf Course</option>
+            <option value="18300">Fox Hollow Golf Course</option>
+            <option value="19002">Spanish Oaks Golf Course</option>
+        </select>
+    </div>
+    <div id="scorecard-container"></div>
+    <script src="Script/script.js"></script>
+</body>
+</html>
