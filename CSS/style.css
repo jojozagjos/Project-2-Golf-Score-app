@@ -32,8 +32,10 @@ h1 {
 }
 
 #scorecard-container {
-    width: 90%;
-    max-width: 10000px;
+    position: relative;
+    width: 80%;
+    display: flex;
+    top: 30%;
     margin: 0 auto;
     overflow-x: auto;
     background-color: white;
@@ -42,22 +44,36 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+
 table {
+    height: 30%;
     width: 100%;
     border-collapse: collapse;
     table-layout: auto;
     word-wrap: break-word;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 table, th, td {
-    border: 1px solid black;
+    table-layout: fixed;
+    border: 2px solid black;
 }
 
 th, td {
-    padding: 10px;
+    padding: 10px 5px;
     text-align: center;
+}
+
+th {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
 }
 
 .total {
     font-weight: bold;
-}
+};
